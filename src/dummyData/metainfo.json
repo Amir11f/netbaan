@@ -1,6 +1,5 @@
 {
   "domain": {
-    "Img": "../../public/svgs/EarthPlanet.svg",
     "total": 300,
     "total_live": 60,
     "live": [10, 20, 30, 15, 18, 5],
@@ -11,7 +10,6 @@
     "vulns": 8
   },
   "ip": {
-    "Img": "../../public/svgs/EarthPlanet.svg",
     "total": 200,
     "total_live": 34,
     "live": [10, 10, 5, 20, 25, 5],
@@ -22,7 +20,6 @@
     "vulns": 2
   },
   "cloud": {
-    "Img": "../../public/svgs/UploadtoCloud.svg",
     "total": 4,
     "total_live": 34,
     "live": [10, 10, 5, 20, 40, 5],
