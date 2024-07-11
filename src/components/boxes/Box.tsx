@@ -42,7 +42,17 @@ const Box = () => {
         </div>
         <div className="spliterBorder"></div>
 
-        <div className="boxRowDown"></div>
+        <div className="boxRowDown">
+          <div className="downLeft">
+            <div className="downs-left"></div>
+            <div className="downs-right">
+              <p className="downs-right-top">IPs</p>
+              <p className="downs-right-bottom">6</p>
+            </div>
+          </div>
+          <div className="downMiddle"></div>
+          <div className="downRight"></div>
+        </div>
       </div>
     </>
   );
