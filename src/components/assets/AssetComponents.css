@@ -14,4 +14,38 @@
   align-self: center;
   background-color: #323041;
   border-radius: 2px;
+  flex-direction: row;
+}
+
+.assetHexagon {
+  position: relative;
+  left: 6px;
+  width: 28px;
+  height: 28px;
+  color: rgb(120, 0, 0);
+  margin-top: 1px;
+}
+
+.assetName {
+  font-size: 11px;
+  color: #cfcfcf;
+  position: relative;
+  left: 42px;
+  top: 7px;
+}
+
+.assetVulnerabilities {
+  font-size: 11px;
+  color: #cfcfcf;
+  position: relative;
+  left: 200px;
+  top: 7px;
+}
+
+.assetLastSeen {
+  font-size: 11px;
+  color: #cfcfcf;
+  position: relative;
+  left: 345px;
+  top: 7px;
 }
