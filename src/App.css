@@ -1,0 +1,7 @@
+.appStyle {
+  display: flex;
+  flex-direction: column;
+  background-color: #10141a;
+  width: 695px;
+  height: 506px;
+}
