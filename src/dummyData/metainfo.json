@@ -1,0 +1,76 @@
+{
+  "domain": {
+    "total": 300,
+    "total_live": 60,
+    "live": [10, 20, 30, 15, 18, 5],
+    "total_monitored": 300,
+    "monitored": [10, 20, 40, 5, 10, 2],
+    "ips": 6,
+    "ports": 157,
+    "vulns": 8
+  },
+  "ip": {
+    "total": 200,
+    "total_live": 34,
+    "live": [10, 10, 5, 20, 25, 5],
+    "total_monitored": 300,
+    "monitored": [10, 10, 40, 5, 30, 2],
+    "ips": 0,
+    "ports": 91,
+    "vulns": 2
+  },
+  "cloud": {
+    "total": 4,
+    "total_live": 34,
+    "live": [10, 10, 5, 20, 40, 5],
+    "total_monitored": 300,
+    "monitored": [10, 10, 40, 5, 30, 2],
+    "ips": 373,
+    "ports": 200,
+    "vulns": 2
+  },
+  "assets": [
+    {
+      "grade": "F",
+      "name": "sub2.targetB.com",
+      "type": "domain",
+      "total_vuls": 54,
+      "lastSeen": 1652881666000
+    },
+    {
+      "grade": "D",
+      "name": "cdn.targetA.com",
+      "type": "domain",
+      "total_vuls": 64,
+      "lastSeen": 1652881666000
+    },
+    {
+      "grade": "D",
+      "name": "test.targetA.com",
+      "type": "domain",
+      "total_vuls": 11,
+      "lastSeen": 1652881666000
+    },
+    {
+      "grade": "D",
+      "name": "Cloud A",
+      "type": "cloud",
+      "total_vuls": 10,
+      "lastSeen": 1652881666000
+    },
+    {
+      "grade": "D",
+      "name": "Cloud B",
+      "type": "cloud",
+      "total_vuls": 9,
+      "lastSeen": 1652881666000
+    },
+    {
+      "grade": "D",
+      "name": "53.21.58.14",
+      "type": "ip",
+      "total_vuls": 8,
+      "lastSeen": 1652881666000
+    }
+  ]
+}
