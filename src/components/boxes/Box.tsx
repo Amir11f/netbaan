@@ -17,8 +17,8 @@ const Box = () => {
     mount();
   }, []);
   console.log(data);
-
   var result = Object.keys(data).map((key) => [key, data[key]]);
+
   console.log(result);
   return (
     <div className="row">

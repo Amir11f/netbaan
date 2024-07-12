@@ -16,7 +16,8 @@ const AssetComponents = () => {
   useEffect(() => {
     mount();
   }, []);
-  console.log(data);
+  // console.log(data);
+
   return (
     <>
       {data.map((i) => (
