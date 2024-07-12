@@ -18,9 +18,16 @@ const AssetComponents = () => {
   }, []);
   // console.log(data);
 
+  interface data {
+    grade: string;
+    name: string;
+    total_vuls: number;
+    lastSeen: string;
+  }
+
   return (
     <>
-      {data.map((i) => (
+      {data.map((i: data) => (
         <div className="asset-components">
           <p className="grade">{i.grade}</p>
           <MdHexagon className="assetHexagon" />

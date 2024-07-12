@@ -27,7 +27,10 @@ const Box = () => {
           <div className="boxRowUp">
             <div className="boxRowUpLeft">
               <div className="fatherRectangle">
-                <div className="rectangleShape" style={{ background: "green" }}>
+                <div
+                  className="rectangleShape"
+                  style={{ background: "#565392" }}
+                >
                   <img
                     src="/svgs/EarthPlanet.svg"
                     alt=""
