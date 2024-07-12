@@ -7,6 +7,13 @@
   font-style: normal;
 }
 
+.row{
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  margin-left: 13px;
+}
+
 .box {
   width: 209px;
   height: 194px;

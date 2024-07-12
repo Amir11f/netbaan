@@ -1,22 +1,34 @@
-import { useEffect } from "react";
 import "./AssetComponents.css";
 import { MdHexagon } from "react-icons/md";
+import { useState, useEffect } from "react";
 
 const AssetComponents = () => {
+  const [data, setData] = useState([]);
+
+  async function mount() {
+    const infos = await fetch(
+      "https://run.mocky.io/v3/cf756b59-d746-4518-8221-55de4a7a8611"
+    );
+    const get = await infos.json();
+    setData(get.assets);
+    console.log(get);
+  }
   useEffect(() => {
-    async function getting() {
-      const get = await fetch("http://localhost:5173/dummyData/metainfo.js");
-      console.log(get);
-    }
-    getting();
+    mount();
   }, []);
+  console.log(data);
   return (
-    <div className="asset-components">
-      <MdHexagon className="assetHexagon" />
-      <div className="assetName">sub2.target.b.com</div>
-      <div className="assetVulnerabilities">54</div>
-      <div className="assetLastSeen">06/17/2023 at 2:44</div>
-    </div>
+    <>
+      {data.map((i) => (
+        <div className="asset-components">
+          <p className="grade">{i.grade}</p>
+          <MdHexagon className="assetHexagon" />
+          <div className="assetName">{i.name}</div>
+          <div className="assetVulnerabilities">{i.total_vuls}</div>
+          <div className="assetLastSeen">{i.lastSeen}</div>
+        </div>
+      ))}
+    </>
   );
 };
 

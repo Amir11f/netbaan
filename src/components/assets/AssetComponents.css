@@ -10,6 +10,7 @@
 .asset-components {
   height: 31px;
   width: 650px;
+  margin-bottom: 4px;
   display: flex;
   align-self: center;
   background-color: #323041;
@@ -31,11 +32,13 @@
   color: #cfcfcf;
   position: relative;
   left: 42px;
+  width: 80px;
   top: 7px;
 }
 
 .assetVulnerabilities {
   font-size: 11px;
+  width: 20px;
   color: #cfcfcf;
   position: relative;
   left: 200px;
@@ -48,4 +51,12 @@
   position: relative;
   left: 345px;
   top: 7px;
+}
+
+.grade{
+  position: relative;
+  left: 24px;
+  bottom: 6px;
+  z-index: 100;
+  font-size: 12px;
 }
