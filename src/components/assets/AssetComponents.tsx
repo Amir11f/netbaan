@@ -1,8 +1,15 @@
+import { useEffect } from "react";
 import "./AssetComponents.css";
-
 import { MdHexagon } from "react-icons/md";
 
 const AssetComponents = () => {
+  useEffect(() => {
+    async function getting() {
+      const get = await fetch("http://localhost:5173/dummyData/metainfo.js");
+      console.log(get);
+    }
+    getting();
+  }, []);
   return (
     <div className="asset-components">
       <MdHexagon className="assetHexagon" />
